@@ -1,0 +1,199 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@400;500;700&family=Allura&family=Noto+Sans+JP:wght@400;500;700&family=Outfit:wght@300;400;600;700&display=swap">
+  <style>
+    body { margin: 0; font-family: 'Noto Sans JP', sans-serif; background: #FFFBF0; }
+    a { color: #FF6B35; } a:hover { color: #E85D2C; }
+    .cur-sec-line::before {
+      content: ''; position: absolute; top: 0; left: 50%; transform: translateX(-50%);
+      width: 120px; height: 3px; border-radius: 2px;
+      background: linear-gradient(90deg, transparent, #FF6B35, #FFD166, #FF6B35, transparent);
+    }
+  </style>
+</helmet>
+
+<div style="width: 390px; background: #FFFBF0; color: #012A5C; font-family: 'Noto Sans JP', sans-serif; line-height: 1.7; overflow: hidden;">
+
+  <!-- HEADER -->
+  <div style="display: flex; align-items: center; justify-content: space-between; padding: 20px 24px;">
+    <!-- 現行ロゴの簡略再現：紫×オレンジ配色 -->
+    <svg width="112" height="60" viewBox="0 0 150 80" aria-hidden="true">
+      <path d="M34 22 L46 6 L58 22 Z" fill="#4b2b83"></path>
+      <ellipse cx="46" cy="24" rx="17" ry="5" fill="#2e2164"></ellipse>
+      <text x="10" y="58" font-family="'Zen Maru Gothic', sans-serif" font-size="30" font-weight="700" fill="#4b2b83">まち</text>
+      <text x="72" y="58" font-family="'Zen Maru Gothic', sans-serif" font-size="30" font-weight="700" fill="#f87402">ハロ</text>
+      <path d="M118 16 L123 12 L124 18 L131 13 L129 22 L134 21 L126 28 L118 24 L110 28 L102 21 L107 22 L105 13 L112 18 L113 12 Z" fill="#6c5f91"></path>
+      <path d="M20 12 c.6 4 2 5.4 6 6 c-4 .6-5.4 2-6 6 c-.6-4-2-5.4-6-6 c4-.6 5.4-2 6-6 Z" fill="#f8a42f"></path>
+      <text x="14" y="74" font-family="'Outfit', sans-serif" font-size="9" letter-spacing="1" fill="#6c5f91">— まちだハロウィンフェス —</text>
+    </svg>
+    <div style="display: flex; flex-direction: column; gap: 6px; width: 32px;">
+      <div style="height: 2px; background: #012A5C;"></div>
+      <div style="height: 2px; background: #012A5C;"></div>
+      <div style="height: 2px; background: #012A5C;"></div>
+    </div>
+  </div>
+
+  <!-- HERO -->
+  <div style="position: relative; height: 760px; display: flex; align-items: center; justify-content: center; overflow: hidden;
+              background:
+                radial-gradient(ellipse at 20% 50%, rgba(139,92,246,.15) 0%, transparent 60%),
+                radial-gradient(ellipse at 80% 30%, rgba(255,107,53,.10) 0%, transparent 50%),
+                radial-gradient(ellipse at 50% 80%, rgba(255,209,102,.05) 0%, transparent 40%);">
+
+    <!-- human.svg のウォーターマーク（opacity .1、上下に大きな空白を持つ） -->
+    <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 370px; opacity: .1; pointer-events: none;">
+      <svg viewBox="0 0 370 175" width="370" height="175" aria-hidden="true">
+        <g fill="#605958">
+          <circle cx="26" cy="40" r="15"></circle><rect x="14" y="58" width="24" height="52" rx="10"></rect>
+          <circle cx="66" cy="32" r="16"></circle><rect x="53" y="51" width="26" height="60" rx="11"></rect>
+          <circle cx="108" cy="44" r="13"></circle><rect x="97" y="60" width="22" height="46" rx="9"></rect>
+          <circle cx="146" cy="30" r="17"></circle><rect x="132" y="50" width="28" height="62" rx="12"></rect>
+          <circle cx="190" cy="42" r="14"></circle><rect x="178" y="59" width="24" height="50" rx="10"></rect>
+          <circle cx="228" cy="33" r="16"></circle><rect x="215" y="52" width="26" height="58" rx="11"></rect>
+          <circle cx="268" cy="45" r="12"></circle><rect x="258" y="60" width="20" height="44" rx="9"></rect>
+          <circle cx="304" cy="31" r="17"></circle><rect x="290" y="51" width="28" height="61" rx="12"></rect>
+          <circle cx="344" cy="43" r="13"></circle><rect x="333" y="59" width="22" height="48" rx="9"></rect>
+        </g>
+        <g fill="#ee8b20">
+          <circle cx="86" cy="128" r="16"></circle><circle cx="185" cy="132" r="14"></circle><circle cx="284" cy="128" r="16"></circle>
+        </g>
+        <text x="185" y="168" text-anchor="middle" font-family="Allura, cursive" font-size="26" fill="#a28975">Where Smiles Connect</text>
+      </svg>
+    </div>
+
+    <div style="position: relative; z-index: 10; text-align: center; padding: 0 24px;">
+      <h1 style="font-family: 'Zen Maru Gothic', sans-serif; font-size: 48px; font-weight: 700; color: #012A5C;
+                 line-height: 1.1; letter-spacing: .05em; margin: 0 0 4px;">まちハロ</h1>
+      <p style="font-family: 'Zen Maru Gothic', sans-serif; font-size: 19px; font-weight: 700; color: #FF6B35;
+                letter-spacing: .08em; margin: 0 0 32px;">- まちだハロウィンフェス -</p>
+      <p style="font-family: 'Zen Maru Gothic', sans-serif; font-weight: 700; font-size: 19px; color: #012A5C;
+                letter-spacing: .06em; margin: 0 0 8px;">出会って、笑って、心地良い。</p>
+      <p style="font-family: Allura, cursive; font-size: 30px; color: #FFD166; margin: 0;">Where Smiles Connect</p>
+
+      <div style="display: inline-flex; align-items: baseline; gap: 8px; margin-top: 48px;
+                  background: rgba(255,255,255,.7); border: 1px solid rgba(1,42,92,.08);
+                  padding: 16px 40px; border-radius: 60px; box-shadow: 0 8px 32px rgba(0,0,0,.2);">
+        <span style="font-size: 14px; font-weight: 700; letter-spacing: .05em; color: #012A5C;">まちハロまであと</span>
+        <span style="font-family: 'Outfit', sans-serif; font-size: 48px; font-weight: 700; color: #FF6B35; line-height: 1;">62</span>
+        <span style="font-size: 19px; font-weight: 700; color: #012A5C;">日</span>
+      </div>
+    </div>
+
+    <div style="position: absolute; bottom: 32px; left: 50%; transform: translateX(-50%); display: flex; flex-direction: column; align-items: center; gap: 8px;">
+      <span style="font-family: 'Outfit', sans-serif; font-size: 11px; letter-spacing: .2em; color: rgba(1,42,92,.7);">SCROLL</span>
+      <div style="width: 1px; height: 48px; background: rgba(1,42,92,.2);"></div>
+    </div>
+  </div>
+
+  <!-- ABOUT -->
+  <div class="cur-sec-line" style="position: relative; background: #FFF8E8; padding: 80px 24px;">
+    <div style="text-align: center; margin-bottom: 64px;">
+      <span style="font-family: 'Outfit', sans-serif; font-size: 13px; font-weight: 600; letter-spacing: .2em; text-transform: uppercase; color: #FF6B35; display: block; margin-bottom: 8px;">About</span>
+      <h2 style="font-family: 'Zen Maru Gothic', sans-serif; font-size: 29px; font-weight: 700; color: #012A5C; line-height: 1.3; margin: 0;">まちハロとは？</h2>
+    </div>
+    <p style="font-size: 17px; line-height: 2.2; text-align: center; color: #012A5C; margin: 0;
+              background: rgba(255,255,255,.7); border: 1px solid rgba(1,42,92,.08); border-radius: 28px;
+              padding: 48px 28px; box-shadow: 0 8px 32px rgba(0,0,0,.15);">
+      「まちハロ」は、町田で開催されるハロウィンフェスティバル。ステージ、ワークショップ、フォトスポットなど、大人も子どもも楽しめる企画が盛りだくさん！ご家族やご友人と一緒に、ぜひお気軽にお越しください。
+    </p>
+  </div>
+
+  <!-- INFO -->
+  <div class="cur-sec-line" style="position: relative; background: #FFFFFF; padding: 80px 24px;">
+    <div style="text-align: center; margin-bottom: 64px;">
+      <span style="font-family: 'Outfit', sans-serif; font-size: 13px; font-weight: 600; letter-spacing: .2em; text-transform: uppercase; color: #FF6B35; display: block; margin-bottom: 8px;">Event Info</span>
+      <h2 style="font-family: 'Zen Maru Gothic', sans-serif; font-size: 29px; font-weight: 700; color: #012A5C; line-height: 1.3; margin: 0;">開催概要</h2>
+    </div>
+    <div style="display: flex; flex-direction: column; gap: 24px;">
+
+      <div style="background: rgba(255,255,255,.7); border: 1px solid rgba(1,42,92,.08); padding: 48px 28px; border-radius: 28px; text-align: center; box-shadow: 0 8px 32px rgba(0,0,0,.06);">
+        <div style="width: 64px; height: 64px; margin: 0 auto 24px; background: linear-gradient(135deg, #FF6B35, #E85D2C); border-radius: 16px; display: flex; align-items: center; justify-content: center; box-shadow: 0 8px 24px rgba(255,107,53,.2);">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="1.5"><rect x="3" y="4" width="18" height="18" rx="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+        </div>
+        <div style="font-family: 'Outfit', sans-serif; font-size: 13px; font-weight: 600; letter-spacing: .15em; text-transform: uppercase; color: #FF6B35; margin-bottom: 12px;">日時</div>
+        <div style="font-family: 'Zen Maru Gothic', sans-serif; font-size: 26px; font-weight: 700; color: #012A5C; line-height: 1.4; margin-bottom: 8px;">10月25日<span style="font-size: 16px; font-weight: 500;">(日)</span></div>
+        <div style="font-size: 14px; color: rgba(1,42,92,.7);">13:00 - 17:00 ／ 入退場自由</div>
+      </div>
+
+      <div style="background: rgba(255,255,255,.7); border: 1px solid rgba(1,42,92,.08); padding: 48px 28px; border-radius: 28px; text-align: center; box-shadow: 0 8px 32px rgba(0,0,0,.06);">
+        <div style="width: 64px; height: 64px; margin: 0 auto 24px; background: linear-gradient(135deg, #FF6B35, #E85D2C); border-radius: 16px; display: flex; align-items: center; justify-content: center; box-shadow: 0 8px 24px rgba(255,107,53,.2);">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+        </div>
+        <div style="font-family: 'Outfit', sans-serif; font-size: 13px; font-weight: 600; letter-spacing: .15em; text-transform: uppercase; color: #FF6B35; margin-bottom: 12px;">場所</div>
+        <div style="font-family: 'Zen Maru Gothic', sans-serif; font-size: 26px; font-weight: 700; color: #012A5C; line-height: 1.4; margin-bottom: 8px;">創価学会<br>町田平和会館</div>
+        <div style="font-size: 14px; color: rgba(1,42,92,.7);">町田市木曽西4-35-45</div>
+      </div>
+
+      <div style="background: rgba(255,255,255,.7); border: 1px solid rgba(1,42,92,.08); padding: 48px 28px; border-radius: 28px; text-align: center; box-shadow: 0 8px 32px rgba(0,0,0,.06);">
+        <div style="width: 64px; height: 64px; margin: 0 auto 24px; background: linear-gradient(135deg, #FF6B35, #E85D2C); border-radius: 16px; display: flex; align-items: center; justify-content: center; box-shadow: 0 8px 24px rgba(255,107,53,.2);">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="1.5"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 00-3-3.87"></path><path d="M16 3.13a4 4 0 010 7.75"></path></svg>
+        </div>
+        <div style="font-family: 'Outfit', sans-serif; font-size: 13px; font-weight: 600; letter-spacing: .15em; text-transform: uppercase; color: #FF6B35; margin-bottom: 12px;">参加</div>
+        <div style="font-family: 'Zen Maru Gothic', sans-serif; font-size: 26px; font-weight: 700; color: #012A5C; line-height: 1.4; margin-bottom: 8px;">無料</div>
+        <div style="font-size: 14px; color: rgba(1,42,92,.7);">どなたでもご参加いただけます</div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- FAQ -->
+  <div class="cur-sec-line" style="position: relative; background: #FFF8E8; padding: 80px 24px;">
+    <div style="text-align: center; margin-bottom: 64px;">
+      <span style="font-family: 'Outfit', sans-serif; font-size: 13px; font-weight: 600; letter-spacing: .2em; text-transform: uppercase; color: #FF6B35; display: block; margin-bottom: 8px;">FAQ</span>
+      <h2 style="font-family: 'Zen Maru Gothic', sans-serif; font-size: 29px; font-weight: 700; color: #012A5C; line-height: 1.3; margin: 0;">よくある質問</h2>
+    </div>
+    <div style="display: flex; flex-direction: column; gap: 16px;">
+      <div style="background: rgba(255,255,255,.7); border: 1px solid rgba(1,42,92,.08); border-radius: 20px; padding: 22px 20px; display: flex; align-items: center; gap: 12px;">
+        <span style="font-family: 'Outfit', sans-serif; font-size: 21px; font-weight: 700; color: #FF6B35;">Q</span>
+        <span style="flex-grow: 1; font-weight: 700; font-size: 16px; color: #012A5C;">出入りは自由でしょうか?</span>
+        <span style="color: #FF6B35; font-size: 20px;">＋</span>
+      </div>
+      <div style="background: rgba(255,255,255,.7); border: 1px solid rgba(1,42,92,.08); border-radius: 20px; padding: 22px 20px; display: flex; align-items: center; gap: 12px;">
+        <span style="font-family: 'Outfit', sans-serif; font-size: 21px; font-weight: 700; color: #FF6B35;">Q</span>
+        <span style="flex-grow: 1; font-weight: 700; font-size: 16px; color: #012A5C;">サンダルで行っても良いでしょうか?</span>
+        <span style="color: #FF6B35; font-size: 20px;">＋</span>
+      </div>
+      <div style="background: rgba(255,255,255,.7); border: 1px solid rgba(1,42,92,.08); border-radius: 20px; padding: 22px 20px; display: flex; align-items: center; gap: 12px;">
+        <span style="font-family: 'Outfit', sans-serif; font-size: 21px; font-weight: 700; color: #FF6B35;">Q</span>
+        <span style="flex-grow: 1; font-weight: 700; font-size: 16px; color: #012A5C;">駐車場はありますか？</span>
+        <span style="color: #FF6B35; font-size: 20px;">＋</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- FORM CTA -->
+  <div style="background: #FFFBF0; padding: 80px 24px;">
+    <div style="background: #012A5C; border-radius: 28px; padding: 48px 28px; text-align: center;">
+      <h2 style="font-family: 'Zen Maru Gothic', sans-serif; font-size: 26px; font-weight: 700; color: #FFFFFF; margin: 0 0 16px;">参加お申し込み</h2>
+      <p style="font-size: 14px; line-height: 1.9; color: rgba(255,255,255,.8); margin: 0 0 32px;">イベントへのご参加は、以下のフォームより事前にお申し込みください。ご家族やお友達同士でのご参加も大歓迎です！</p>
+      <div style="display: inline-flex; align-items: center; gap: 10px; background: linear-gradient(135deg, #FF6B35, #E85D2C); color: #FFFFFF; padding: 16px 32px; border-radius: 50px; font-weight: 700; font-size: 16px; box-shadow: 0 4px 15px rgba(255,107,53,.4);">
+        参加フォームを開く
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <div style="background: #FFF8E8; padding: 48px 24px; display: flex; flex-direction: column; align-items: center; gap: 20px;">
+    <svg width="150" height="80" viewBox="0 0 150 80" aria-hidden="true">
+      <path d="M34 22 L46 6 L58 22 Z" fill="#4b2b83"></path>
+      <ellipse cx="46" cy="24" rx="17" ry="5" fill="#2e2164"></ellipse>
+      <text x="10" y="58" font-family="'Zen Maru Gothic', sans-serif" font-size="30" font-weight="700" fill="#4b2b83">まち</text>
+      <text x="72" y="58" font-family="'Zen Maru Gothic', sans-serif" font-size="30" font-weight="700" fill="#f87402">ハロ</text>
+      <path d="M118 16 L123 12 L124 18 L131 13 L129 22 L134 21 L126 28 L118 24 L110 28 L102 21 L107 22 L105 13 L112 18 L113 12 Z" fill="#6c5f91"></path>
+      <text x="14" y="74" font-family="'Outfit', sans-serif" font-size="9" letter-spacing="1" fill="#6c5f91">— まちだハロウィンフェス —</text>
+    </svg>
+    <p style="font-size: 12px; color: rgba(1,42,92,.7); margin: 0;">© 2026 まちハロ - まちだハロウィンフェス</p>
+  </div>
+
+</div>
+</x-dc>
+</body>
+</html>

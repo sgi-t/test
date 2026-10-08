@@ -1,0 +1,273 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@400;500;700&family=Allura&display=swap">
+  <style>
+    body { margin: 0; font-family: 'Zen Maru Gothic', 'Hiragino Maru Gothic ProN', sans-serif; background: #F7F2EC; }
+    a { color: #D9724C; } a:hover { color: #B95B38; }
+    .card {
+      background: #FDFBF7; border: 1px solid #EAE1D2; border-radius: 24px;
+      box-shadow: 0 3px 14px rgba(72,88,56,.06);
+    }
+    .chip {
+      width: 46px; height: 46px; border-radius: 15px; flex-shrink: 0;
+      display: flex; align-items: center; justify-content: center;
+    }
+    .lbl { font-size: 11px; font-weight: 700; letter-spacing: .14em; color: #4F7F7F; }
+    .note {
+      display: inline-flex; align-items: center; gap: 6px;
+      padding: 4px 11px; border: 1px dashed #BFAE92; border-radius: 999px;
+      background: rgba(253,251,247,.72); font-size: 10px; color: #8C7A5E; letter-spacing: .02em;
+    }
+    .sec-title { font-size: 24px; font-weight: 700; color: #485838; margin: 0; line-height: 1.4; }
+  </style>
+</helmet>
+
+<div style="width: 390px; background: #F7F2EC; color: #3A4A2E; font-family: 'Zen Maru Gothic', 'Hiragino Maru Gothic ProN', sans-serif; line-height: 1.9; overflow: hidden;">
+
+  <!-- ==================== HEADER ==================== -->
+  <div style="display: flex; align-items: center; justify-content: space-between; padding: 14px 20px; background: #FDFBF7; border-bottom: 1px solid #EAE1D2;">
+    <svg width="98" height="43" viewBox="0 0 150 66" aria-hidden="true">
+      <path d="M20 20 L30 6 L40 20 Z" fill="#485838"></path>
+      <ellipse cx="30" cy="21" rx="14" ry="4" fill="#3A4A2E"></ellipse>
+      <text x="6" y="52" font-family="'Zen Maru Gothic', sans-serif" font-size="27" font-weight="700" fill="#485838">まち</text>
+      <text x="64" y="52" font-family="'Zen Maru Gothic', sans-serif" font-size="27" font-weight="700" fill="#D9724C">ハロ！</text>
+    </svg>
+    <div style="display: flex; align-items: center; gap: 14px;">
+      <span style="font-size: 12px; font-weight: 700; color: #486848; background: #F8B838; padding: 7px 15px; border-radius: 999px;">参加フォーム</span>
+      <div style="display: flex; flex-direction: column; gap: 5px; width: 24px;">
+        <div style="height: 2px; background: #485838; border-radius: 2px;"></div>
+        <div style="height: 2px; background: #485838; border-radius: 2px;"></div>
+        <div style="height: 2px; background: #485838; border-radius: 2px;"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==================== HERO ==================== -->
+  <div style="position: relative; background: #FAF7F2; padding: 40px 20px 44px; overflow: hidden; text-align: center;">
+    <!-- 角にあしらう小さなモチーフ -->
+    <svg width="54" height="82" viewBox="0 0 100 150" style="position: absolute; top: 14px; left: -14px; opacity: .55;" aria-hidden="true">
+      <path d="M50 150 L50 56" stroke="#B49A76" stroke-width="3.4" fill="none" stroke-linecap="round"></path>
+      <path d="M50 100 L28 78 M50 86 L72 64" stroke="#B49A76" stroke-width="2.4" fill="none" stroke-linecap="round"></path>
+      <ellipse cx="26" cy="74" rx="8" ry="5.5" fill="#98A878" transform="rotate(-34 26 74)"></ellipse>
+      <ellipse cx="74" cy="60" rx="8" ry="5.5" fill="#F8B838" transform="rotate(28 74 60)"></ellipse>
+      <ellipse cx="46" cy="44" rx="8" ry="5.5" fill="#486848" transform="rotate(-12 46 44)"></ellipse>
+    </svg>
+    <svg width="26" height="26" viewBox="0 0 34 34" style="position: absolute; top: 22px; right: 22px;" aria-hidden="true">
+      <path d="M27.23 26.56 A14 14 0 1 1 20.64 3.48 A12 12 0 0 0 27.23 26.56 Z" fill="#F8B838"></path>
+    </svg>
+    <svg width="30" height="14" viewBox="0 0 44 20" style="position: absolute; top: 62px; right: 60px;" aria-hidden="true">
+      <path d="M22 6 L26 2 L27 8 L34 3 L32 11 L40 9 L30 17 L22 12 L14 17 L4 9 L12 11 L10 3 L17 8 L18 2 Z" fill="#485838" opacity=".65"></path>
+    </svg>
+    <svg width="13" height="13" viewBox="0 0 20 20" style="position: absolute; bottom: 34px; right: 26px;" aria-hidden="true"><path d="M10 0 C11 7 13 9 20 10 C13 11 11 13 10 20 C9 13 7 11 0 10 C7 9 9 7 10 0 Z" fill="#F8A888"></path></svg>
+
+    <div style="position: relative;">
+      <div style="font-size: 48px; font-weight: 700; line-height: 1.08;">
+        <span style="color: #485838;">まち</span><span style="color: #D9724C;">ハロ！</span>
+      </div>
+      <div style="font-size: 15px; font-weight: 700; color: #485838; letter-spacing: .04em; margin-top: 6px;">
+        町田<span style="color: #D9724C;">ハロウィン</span>フェス
+      </div>
+
+      <div style="width: 44px; height: 1px; background: #C9BFA8; margin: 20px auto;"></div>
+
+      <p style="font-size: 16px; font-weight: 500; color: #3A4A2E; letter-spacing: .04em; margin: 0 0 2px;">出会って、笑って、心地いい。</p>
+      <p style="font-family: Allura, cursive; font-size: 24px; color: #486848; margin: 0;">Where smiles connect</p>
+
+      <!-- 日付カード -->
+      <div class="card" style="margin-top: 26px; padding: 20px 18px; display: flex; align-items: center; gap: 16px; text-align: left;">
+        <div style="text-align: center; flex-shrink: 0; background: #F8A888; border-radius: 16px; padding: 8px 14px;">
+          <div style="font-size: 11px; font-weight: 700; color: #485838; line-height: 1.4;">10月</div>
+          <div style="font-size: 32px; font-weight: 700; color: #485838; line-height: 1;">25</div>
+          <div style="font-size: 10px; font-weight: 700; color: #485838; line-height: 1.6;">日曜日</div>
+        </div>
+        <div style="flex-grow: 1;">
+          <div style="font-size: 19px; font-weight: 700; color: #485838; line-height: 1.4;">13:00 - 17:00</div>
+          <div style="font-size: 12px; color: #6B7A5C; line-height: 1.7;">入退場自由 ／ 参加無料</div>
+          <div style="display: inline-flex; align-items: baseline; gap: 5px; margin-top: 6px; background: #EFF3EA; border-radius: 999px; padding: 3px 12px;">
+            <span style="font-size: 11px; color: #486848;">あと</span>
+            <span style="font-size: 17px; font-weight: 700; color: #D9724C; line-height: 1;">62</span>
+            <span style="font-size: 11px; color: #486848;">日</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==================== 開催概要 ==================== -->
+  <div style="position: relative; background: #F7F2EC; padding: 40px 20px 20px;">
+    <div style="text-align: center; margin-bottom: 20px;">
+      <div style="font-size: 11px; font-weight: 700; color: #D9724C; letter-spacing: .16em; margin-bottom: 3px;">EVENT INFO</div>
+      <h2 class="sec-title">開催概要</h2>
+    </div>
+
+    <div style="display: flex; flex-direction: column; gap: 14px;">
+
+      <div class="card" style="padding: 20px 18px; display: flex; align-items: center; gap: 15px;">
+        <div class="chip" style="background: #FCE7D8;">
+          <svg width="24" height="24" viewBox="0 0 38 38" aria-hidden="true">
+            <rect x="4" y="7" width="30" height="27" rx="5" fill="none" stroke="#D9724C" stroke-width="2.2"></rect>
+            <path d="M4 15 H34" stroke="#D9724C" stroke-width="2.2"></path>
+            <path d="M12 3 V9 M26 3 V9" stroke="#D9724C" stroke-width="2.2" stroke-linecap="round"></path>
+          </svg>
+        </div>
+        <div style="flex-grow: 1;">
+          <div class="lbl">日時</div>
+          <div style="font-size: 19px; font-weight: 700; color: #485838; line-height: 1.4;">10月25日<span style="font-size: 13px;">(日)</span></div>
+          <div style="font-size: 12px; color: #6B7A5C;">13:00 - 17:00 ／ 入退場自由</div>
+        </div>
+      </div>
+
+      <div class="card" style="padding: 20px 18px; display: flex; align-items: center; gap: 15px;">
+        <div class="chip" style="background: #DCEBEB;">
+          <svg width="24" height="24" viewBox="0 0 38 38" aria-hidden="true">
+            <path d="M19 34 C19 34 7 24 7 15 A12 12 0 0 1 31 15 C31 24 19 34 19 34 Z" fill="none" stroke="#4F7F7F" stroke-width="2.2"></path>
+            <circle cx="19" cy="15" r="4" fill="none" stroke="#4F7F7F" stroke-width="2.2"></circle>
+          </svg>
+        </div>
+        <div style="flex-grow: 1;">
+          <div class="lbl">会場</div>
+          <div style="font-size: 19px; font-weight: 700; color: #485838; line-height: 1.4;">町田平和会館</div>
+          <div style="font-size: 12px; color: #6B7A5C;">町田市木曽西4-12-31</div>
+        </div>
+      </div>
+
+      <div class="card" style="padding: 20px 18px; display: flex; align-items: center; gap: 15px;">
+        <div class="chip" style="background: #FBEDCF;">
+          <svg width="24" height="24" viewBox="0 0 38 38" aria-hidden="true">
+            <circle cx="14" cy="13" r="6" fill="none" stroke="#C79018" stroke-width="2.2"></circle>
+            <path d="M4 31 a10 10 0 0 1 20 0" fill="none" stroke="#C79018" stroke-width="2.2" stroke-linecap="round"></path>
+            <circle cx="27" cy="16" r="4" fill="none" stroke="#C79018" stroke-width="2.2"></circle>
+            <path d="M22 31 a7 7 0 0 1 11-5" fill="none" stroke="#C79018" stroke-width="2.2" stroke-linecap="round"></path>
+          </svg>
+        </div>
+        <div style="flex-grow: 1;">
+          <div class="lbl">参加</div>
+          <div style="font-size: 19px; font-weight: 700; color: #485838; line-height: 1.4;">無料</div>
+          <div style="font-size: 12px; color: #6B7A5C;">どなたでもご参加いただけます</div>
+        </div>
+      </div>
+
+    </div>
+
+    <div style="text-align: center; margin-top: 16px;">
+      <span class="note">カードが下から順にすっと現れる</span>
+    </div>
+  </div>
+
+  <!-- ==================== ABOUT ==================== -->
+  <div style="position: relative; background: #F7F2EC; padding: 26px 20px 40px; overflow: hidden;">
+    <svg width="24" height="16" viewBox="0 0 30 20" style="position: absolute; top: 34px; right: 24px;" aria-hidden="true">
+      <path d="M4 14 c0-5 4-8 9-8 c3 0 5 1 7 3 l6-2 -3 4 c1 4 -2 7 -7 7 c-6 0 -12 -1 -12 -4 Z" fill="#FDFBF7" stroke="#88B8B8" stroke-width="1.1"></path>
+      <circle cx="18" cy="10" r="1.1" fill="#485838"></circle>
+    </svg>
+
+    <div style="text-align: center; margin-bottom: 20px;">
+      <div style="font-size: 11px; font-weight: 700; color: #D9724C; letter-spacing: .16em; margin-bottom: 3px;">ABOUT</div>
+      <h2 class="sec-title">まちハロとは？</h2>
+    </div>
+
+    <div class="card" style="padding: 26px 22px; position: relative;">
+      <p style="font-size: 14px; line-height: 2.1; color: #3A4A2E; margin: 0; letter-spacing: .02em; text-wrap: pretty;">
+        「まちハロ」は、町田で開催されるハロウィンフェスティバル。ステージ、ワークショップ、フォトスポットなど、大人も子どもも楽しめる企画が盛りだくさん！ご家族やご友人と一緒に、ぜひお気軽にお越しください。
+      </p>
+      <!-- カードの隙間にあしらうモチーフ -->
+      <svg width="46" height="40" viewBox="0 0 46 40" style="position: absolute; bottom: -14px; right: 16px;" aria-hidden="true">
+        <ellipse cx="23" cy="24" rx="18" ry="13" fill="#EE9046"></ellipse>
+        <path d="M23 11 v-6" stroke="#486848" stroke-width="2.6" stroke-linecap="round"></path>
+        <path d="M16 21 l4.5 4.5 -8.5 0 Z" fill="#3A4A2E"></path>
+        <path d="M30 21 l4.5 4.5 -8.5 0 Z" fill="#3A4A2E"></path>
+        <path d="M16 30 q7 4.5 14 0 q-7 2 -14 0 Z" fill="#3A4A2E"></path>
+      </svg>
+    </div>
+
+    <!-- 人物イラストの帯 -->
+    <div style="margin-top: 30px; text-align: center;">
+      <svg viewBox="0 0 370 130" width="340" height="120" style="margin: 0 auto;" aria-hidden="true">
+        <g>
+          <circle cx="40" cy="44" r="14" fill="#E8C9A8"></circle><rect x="29" y="61" width="22" height="50" rx="9" fill="#486848"></rect>
+          <circle cx="88" cy="36" r="15" fill="#F0D5B4"></circle><rect x="76" y="54" width="24" height="57" rx="10" fill="#F8A888"></rect>
+          <circle cx="134" cy="47" r="12" fill="#E8C9A8"></circle><rect x="124" y="62" width="20" height="45" rx="8" fill="#F8B838"></rect>
+          <circle cx="180" cy="35" r="16" fill="#F0D5B4"></circle><rect x="167" y="54" width="26" height="58" rx="11" fill="#88B8B8"></rect>
+          <circle cx="228" cy="46" r="13" fill="#E8C9A8"></circle><rect x="217" y="62" width="22" height="47" rx="9" fill="#98A878"></rect>
+          <circle cx="274" cy="36" r="15" fill="#F0D5B4"></circle><rect x="262" y="54" width="24" height="56" rx="10" fill="#D9724C"></rect>
+          <circle cx="322" cy="45" r="14" fill="#E8C9A8"></circle><rect x="311" y="61" width="22" height="49" rx="9" fill="#486848"></rect>
+        </g>
+      </svg>
+      <div style="margin-top: 2px;">
+        <span class="note">human.svg をクロップして帯に置く</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==================== FAQ ==================== -->
+  <div style="background: #FAF7F2; padding: 40px 20px 44px;">
+    <div style="text-align: center; margin-bottom: 20px;">
+      <div style="font-size: 11px; font-weight: 700; color: #D9724C; letter-spacing: .16em; margin-bottom: 3px;">FAQ</div>
+      <h2 class="sec-title">よくある質問</h2>
+    </div>
+
+    <div style="display: flex; flex-direction: column; gap: 12px;">
+      <!-- 1件目は開いた状態で見せる -->
+      <div class="card" style="padding: 18px 18px; border-color: #E4D3BC;">
+        <div style="display: flex; align-items: center; gap: 12px;">
+          <span style="width: 24px; height: 24px; border-radius: 50%; background: #F8B838; color: #FDFBF7; font-size: 13px; font-weight: 700; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">Q</span>
+          <span style="flex-grow: 1; font-size: 14px; font-weight: 700; color: #485838; line-height: 1.6;">出入りは自由でしょうか?</span>
+          <svg width="14" height="14" viewBox="0 0 14 14" aria-hidden="true"><path d="M2.5 9 L7 4.5 L11.5 9" stroke="#98A878" stroke-width="1.6" fill="none" stroke-linecap="round"></path></svg>
+        </div>
+        <div style="display: flex; gap: 12px; margin-top: 12px; padding-top: 12px; border-top: 1px dashed #E0D6C4;">
+          <span style="width: 24px; height: 24px; border-radius: 50%; background: #DCEBEB; color: #4F7F7F; font-size: 13px; font-weight: 700; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">A</span>
+          <p style="flex-grow: 1; font-size: 13px; line-height: 1.95; color: #3A4A2E; margin: 0;">出入りは自由です。開催時間内(13:00-17:00)であれば、お好きな時間にご来場いただけます。</p>
+        </div>
+      </div>
+
+      <div class="card" style="padding: 18px 18px; display: flex; align-items: center; gap: 12px;">
+        <span style="width: 24px; height: 24px; border-radius: 50%; background: #F8B838; color: #FDFBF7; font-size: 13px; font-weight: 700; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">Q</span>
+        <span style="flex-grow: 1; font-size: 14px; font-weight: 500; color: #3A4A2E; line-height: 1.6;">サンダルで行っても良いでしょうか?</span>
+        <svg width="14" height="14" viewBox="0 0 14 14" aria-hidden="true"><path d="M2.5 5 L7 9.5 L11.5 5" stroke="#98A878" stroke-width="1.6" fill="none" stroke-linecap="round"></path></svg>
+      </div>
+
+      <div class="card" style="padding: 18px 18px; display: flex; align-items: center; gap: 12px;">
+        <span style="width: 24px; height: 24px; border-radius: 50%; background: #F8B838; color: #FDFBF7; font-size: 13px; font-weight: 700; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">Q</span>
+        <span style="flex-grow: 1; font-size: 14px; font-weight: 500; color: #3A4A2E; line-height: 1.6;">駐車場はありますか？</span>
+        <svg width="14" height="14" viewBox="0 0 14 14" aria-hidden="true"><path d="M2.5 5 L7 9.5 L11.5 5" stroke="#98A878" stroke-width="1.6" fill="none" stroke-linecap="round"></path></svg>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==================== CTA ==================== -->
+  <div style="background: #F7F2EC; padding: 8px 20px 40px;">
+    <div class="card" style="background: #486848; border-color: #486848; padding: 30px 22px; text-align: center; position: relative; overflow: hidden;">
+      <svg width="20" height="20" viewBox="0 0 34 34" style="position: absolute; top: 16px; right: 18px;" aria-hidden="true"><path d="M27.23 26.56 A14 14 0 1 1 20.64 3.48 A12 12 0 0 0 27.23 26.56 Z" fill="#F8B838" opacity=".85"></path></svg>
+      <h2 style="font-size: 21px; font-weight: 700; color: #FDFBF7; margin: 0 0 10px;">お気軽にお越しください</h2>
+      <p style="font-size: 13px; line-height: 2; color: rgba(253,251,247,.85); margin: 0 0 22px; text-wrap: pretty;">
+        入退場は自由、参加費もかかりません。人数の目安を知りたいので、事前にご連絡いただけると助かります。
+      </p>
+      <div style="display: inline-flex; align-items: center; gap: 10px; background: #F8B838; color: #3A4A2E; padding: 14px 28px; border-radius: 999px; font-size: 15px; font-weight: 700;">
+        参加フォームを開く
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==================== FOOTER ==================== -->
+  <div style="background: #FDFBF7; border-top: 1px solid #EAE1D2; padding: 28px 24px 32px; display: flex; flex-direction: column; align-items: center; gap: 12px;">
+    <svg width="104" height="46" viewBox="0 0 150 66" aria-hidden="true">
+      <path d="M20 20 L30 6 L40 20 Z" fill="#485838"></path>
+      <ellipse cx="30" cy="21" rx="14" ry="4" fill="#3A4A2E"></ellipse>
+      <text x="6" y="52" font-family="'Zen Maru Gothic', sans-serif" font-size="27" font-weight="700" fill="#485838">まち</text>
+      <text x="64" y="52" font-family="'Zen Maru Gothic', sans-serif" font-size="27" font-weight="700" fill="#D9724C">ハロ！</text>
+    </svg>
+    <p style="font-size: 11px; color: #6B7A5C; margin: 0;">© 2026 まちハロ - 町田ハロウィンフェス</p>
+  </div>
+
+</div>
+</x-dc>
+</body>
+</html>

@@ -835,9 +835,10 @@ body:not(.is-loading) .bleed { opacity: 1; }
     .tt-timeline { padding-left: 40px; }
     .tt-timeline::before { left: 14px; }
     .tt-dot { left: -40px; width: 24px; height: 24px; }
-    .tt-card { padding: 18px 22px; }
+    .tt-card { padding: 46px 32px; }
+    .tt-item { padding-bottom: 36px; }
     .tt-name { font-size: 16px; }
-    .tt-desc { font-size: 13px; }
+    .tt-desc { font-size: 13px; margin-top: 10px; }
     .tt-time { font-size: 12px; padding: 4px 14px; }
     .tt-note { font-size: 13px; }
     .tt-artist-name { font-size: 17px; }
